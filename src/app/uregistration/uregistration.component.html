@@ -1,0 +1,51 @@
+<div style="text-align: center;">
+    <form class="form-group">
+       
+        <div class="col-md-6">
+            <label>Name</label>
+            <input type="text" name="name" placeholder=" name" class="form-control"
+              [(ngModel)]="user.name">
+        </div>
+        
+ 
+        <div class="col-md-6">
+            <label>Phone No.</label>
+            <input type="text" name="phone" placeholder="phone number" class="form-control"
+            [(ngModel)]="user.phone">
+        </div> 
+        <div class="col-md-6">
+            <label>Aadhar</label>
+            <input type="text" name="Aadhar" placeholder="your Aadhar" class="form-control"
+            [(ngModel)]="user.aadhar">
+        </div>
+        <div class="col-md-6">
+            <label>address</label>
+            <input type="text" name="address" placeholder="your address" class="form-control"
+            [(ngModel)]="user.address">
+        </div>
+    
+        <div class="col-md-6">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="your email" class="form-control"
+            [(ngModel)]="user.email">
+        </div>
+
+        <div class="col-md-6">
+            <label>username</label>
+            <input type="text" name="username" placeholder="your username" class="form-control"
+            [(ngModel)]="user.username">
+        </div>
+
+        <div class="col-md-6">
+            <label>set your password</label>
+            <input type="text" name="password" placeholder="your password" class="form-control"
+            [(ngModel)]="user.password">
+        </div>
+
+        <div class="col-md-6">
+        <button class="btn btn-success" (click)="request()">send request for registretion</button>
+    </div>
+
+    </form>
+</div>
+

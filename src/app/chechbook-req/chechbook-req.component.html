@@ -1,0 +1,33 @@
+<div style="text-align: center;">
+    <form class="form-group">
+       
+        <div class="col-md-6">
+            <label>userId</label>
+            <input type="text" name="userId" placeholder=" user Id" class="form-control"
+              [(ngModel)]="checkbook.userId">
+        </div>
+        
+ 
+        <div class="col-md-6">
+            <label>User name</label>
+            <input type="text" name="username" placeholder="User name" class="form-control"
+            [(ngModel)]="checkbook.username">
+        </div> 
+        <div class="col-md-6">
+            <label> Account no.</label>
+            <input type="text" name="accountNo" placeholder="Account no." class="form-control"
+            [(ngModel)]="checkbook.accountNo">
+        </div>
+        <div class="col-md-6">
+            <label>description</label>
+            <input type="text" name="description" placeholder="description" class="form-control"
+            [(ngModel)]="checkbook.description" >
+        </div>
+    
+        <div class="col-md-6">
+        <button class="btn btn-success" (click)="checkbookreq()">send request for checkbook</button>
+    </div>
+
+    </form>
+</div>
+

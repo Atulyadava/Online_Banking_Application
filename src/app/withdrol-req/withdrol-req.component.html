@@ -1,0 +1,33 @@
+<div style="text-align: center;">
+    <form class="form-group">
+       
+        <div class="col-md-6">
+            <label>userId</label>
+            <input type="text" name="userId" placeholder=" user Id" class="form-control"
+             [(ngModel)]="withdrol.userId" >
+        </div>
+        
+ 
+        <div class="col-md-6">
+            <label>User name</label>
+            <input type="text" name="username" placeholder="User name" class="form-control"
+            [(ngModel)]="withdrol.username">
+        </div> 
+        <div class="col-md-6">
+            <label> Account no.</label>
+            <input type="text" name="accountNo" placeholder="Account no." class="form-control"
+            [(ngModel)]="withdrol.accountNo">
+        </div>
+        <div class="col-md-6">
+            <label>withdrol Amount</label>
+            <input type="text" name="withdrol_amount" placeholder="Diposit Amount" class="form-control"
+            [(ngModel)]="withdrol.withdrol_amount">
+        </div>
+
+        <div class="col-md-6">
+        <button class="btn btn-success" (click)="WithdrolRequest()" >send request for withdrol</button>
+    </div>
+
+    </form>
+</div>
+

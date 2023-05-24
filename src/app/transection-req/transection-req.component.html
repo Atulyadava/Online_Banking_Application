@@ -1,0 +1,30 @@
+<div style="text-align: center;">
+    <h1>trasection page</h1>
+    <form class="form-group">
+       
+        <div class="col-md-6">
+            <label>Reciver Account No.</label>
+            <input type="text" name="receiverAccountNo" placeholder="Add receiver Account No " class="form-control"
+             [(ngModel)]="trasection.receiverAccountNo">
+        </div>
+        
+ 
+        <div class="col-md-6">
+            <label>sender account no.</label>
+            <input type="text" name="senderAccountNo" placeholder="Add sender Account No" class="form-control"
+            [(ngModel)]="trasection.senderAccountNo">
+        </div> 
+       
+        <div class="col-md-6">
+            <label>Transfer Amount</label>
+            <input type="text" name="transferAmount" placeholder="transfer Amount" class="form-control"
+            [(ngModel)]="trasection.transferAmount">
+        </div>
+
+        <div class="col-md-6">
+        <button class="btn btn-success" (click)="trasectionReq()" >send request for diposit</button>
+    </div>
+
+    </form>
+</div>
+

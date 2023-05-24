@@ -1,0 +1,33 @@
+
+    <div class="d-flex justify-content-between p-3">
+       <div *ngFor="let pa of pAccount" class="card">
+        <h1>primary account Id:{{pa.pid}}</h1>
+        <h2>Account Number:{{pa.accountNo}}</h2>
+        <h2>Account Type:{{pa.accountType}}</h2>
+        <h3>Amount:{{pa.totalAmount}}</h3>
+        <button class="btn btn-success" (click)="withdrolReq()">withdrol request</button>
+        <button class="btn btn-info" (click)="chackbookReq()">chack book request</button>
+        <button class="btn btn-success" (click)="dipositReq()">diposit request</button>
+        <button class="btn btn-primary" (click)="transectionReq()">trasection Request</button>
+       </div> 
+       
+        <div *ngFor="let us of user">
+           <h1>{{us.name}}</h1>
+           <button class="btn btn-success" (click)="editProfile()">edit profile</button><br>
+           <div>
+            <button class="btn btn-success" (click)="addAccount()">add bank accont</button>
+           </div>
+        </div>
+         <div>
+            <div *ngFor="let sa of sAccount" class="card">
+                <h1>primary account Id:{{sa.sid}}</h1>
+                <h2>Account Number:{{sa.accountNo}}</h2>
+                <h2>Account Type:{{sa.accountType}}</h2>
+                <h3>Amount:{{sa.totalAmount}}</h3>
+                <button class="btn btn-success" (click)="withdrolReq()">withdrol request</button>
+                <button class="btn btn-info"  (click)="chackbookReq()">chack book request</button>
+                <button class="btn btn-success" (click)="dipositReq()">diposit request</button>
+                <button class="btn btn-primary" (click)="transectionReq()">trasection Request</button>
+
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<br>
+<div style="text-align: center;">
+    <form class="form-inline">
+        <div>
+            <input type="text" placeholder="enter username" class="form-control" #username>
+            <input type="text" placeholder="enter your password" class="form-control" #password>
+            </div>
+            <div>
+                <label><input type="checkbox" >remember me</label>
+            </div>
+           
+            <button class="btn btn-primary" (click)="login(username.value,password.value)">login</button>
+        
+    </form>
+    <div> 
+        <h5>if your new user then register</h5>
+        <button class="btn btn-success" (click)="register()">register</button>
+    </div>
+
+</div>
+<br>

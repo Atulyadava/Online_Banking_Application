@@ -1,0 +1,33 @@
+<div style="text-align: center;">
+    <form class="form-group">
+       
+        <div class="col-md-6">
+            <label>userId</label>
+            <input type="text" name="userId" placeholder=" user Id" class="form-control"
+              [(ngModel)]="diposit.userId">
+        </div>
+        
+ 
+        <div class="col-md-6">
+            <label>User name</label>
+            <input type="text" name="username" placeholder="User name" class="form-control"
+            [(ngModel)]="diposit.username">
+        </div> 
+        <div class="col-md-6">
+            <label> Account no.</label>
+            <input type="text" name="accountNo" placeholder="Account no." class="form-control"
+            [(ngModel)]="diposit.accountNo" >
+        </div>
+        <div class="col-md-6">
+            <label>Diposit Amount</label>
+            <input type="text" name="dipositAmount" placeholder="Diposit Amount" class="form-control"
+            [(ngModel)]="diposit.dipositAmount">
+        </div>
+
+        <div class="col-md-6">
+        <button class="btn btn-success" (click)="dipositReq()" >send request for diposit</button>
+    </div>
+
+    </form>
+</div>
+

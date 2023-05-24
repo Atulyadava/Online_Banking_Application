@@ -1,0 +1,30 @@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+        <th>Request Id</th>
+        <th>user Id</th>
+        <th>username</th>
+        <th>Account No.</th>
+        <th>Amount</th>
+        <th>status</th>
+        <th>action</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let item of withdrolR">
+        
+        <tr *ngIf="(item.status==0)"> 
+            
+            <td>{{item.wid}}</td>
+            <td>{{item.userId}}</td>
+            <td>{{item.username}}</td>
+            <td>{{item.accountNo}}</td>
+            <td>{{item.withdrol_amount}}</td>
+             <td>{{item.status}}</td>
+             <td><button class="btn btn-success" (click)="confirm(item.wid)">confirm</button></td>
+            
+        </tr>
+   
+    </tbody>
+
+</table>
+

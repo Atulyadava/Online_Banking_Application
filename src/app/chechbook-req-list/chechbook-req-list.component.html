@@ -1,0 +1,30 @@
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+            <th>Request Id</th>
+            <th>user Id</th>
+            <th>username</th>
+            <th>Account No.</th>
+            <th>description</th>
+            <th>status</th>
+            <th>action</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let item of checkbookR">
+            
+            <tr *ngIf="(item.status==0)"> 
+                
+                <td>{{item.cid}}</td>
+                <td>{{item.userId}}</td>
+                <td>{{item.username}}</td>
+                <td>{{item.accountNo}}</td>
+                <td>{{item.description}}</td>
+                 <td>{{item.status}}</td>
+                 <td><button class="btn btn-success" (click)="confir(item.cid)">confirm</button></td>
+                
+            </tr>
+       
+        </tbody>
+
+    </table>

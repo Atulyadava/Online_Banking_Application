@@ -1,0 +1,66 @@
+<h1>create account request</h1>
+<div class="d-flex justify-content-between p-3">
+
+   
+    <div style="text-align: center;">
+        <button class="btn btn-info">primary Account</button> 
+        <form class="form-group">
+           
+            <div class="col-md">
+                <label>Account number</label>
+                <input type="text" name="accountNo" placeholder=" Account number" class="form-control"
+                  >
+            </div>
+            
+     
+            <div class="col-md">
+                <label>Account Type</label>
+                <input type="text" name="totalAmount" placeholder="Account Type" class="form-control"
+                >
+            </div> 
+            <div class="col-md">
+                <label>Total Aamount</label>
+                <input type="text" name="accountType" placeholder="Total Aamount" class="form-control"
+               >
+            </div>
+           
+    <br>
+            <div class="col-md">
+            <button class="btn btn-success" (click)="request()">send request for new Primary Account</button>
+        </div>
+    
+        </form>
+    </div>
+    
+   
+    
+
+    <div style="text-align: center;">
+        <button class="btn btn-info">Saving Account Account</button> 
+        <form class="form-group">
+           
+            <div class="col-md">
+                <label>Account number</label>
+                <input type="text" name="accountNo" placeholder=" Account number" class="form-control"
+                 [(ngModel)]="saving.accountNo" >
+            </div>
+            <div class="col-md">
+                <label>Total Aamount</label>
+                <input type="text" name="accountType" placeholder="Total Aamount" class="form-control"
+                [(ngModel)]="saving.accountType">
+            </div>
+
+            <div class="col-md">
+                <label>Account Type</label>
+                <input type="text" name="totalAmount" placeholder="Account Type" class="form-control"
+                [(ngModel)]="saving.totalAmount">
+            </div> 
+           
+    <br>
+            <div class="col-md">
+            <button class="btn btn-success" (click)="requestSavingAcco()">send request for new Saving Account</button>
+        </div>
+    
+        </form>
+    </div>
+</div>
